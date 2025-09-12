@@ -3,11 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Harish — Web Developer (Fresher)</title>
-  <meta name="description" content="Harish portfolio — HTML, CSS, JavaScript, Python, Java, SQL.">
+  <title>Harish's Portfolio</title>
 
+  <!-- Favicon: user-tie svg dataurl -->
+  <link rel="icon" href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect width="24" height="24" fill="%23071e2a"/><path fill="%23ffffff" d="M12 2c-1.1 0-2 .9-2 2v2.2A4 4 0 0 0 8 8c0 .8.3 1.5.8 2.1L12 16l3.2-5.9A3.9 3.9 0 0 0 16 8a4 4 0 0 0-2-1.8V4c0-1.1-.9-2-2-2z"/></svg>'>
+
+  <!-- Google font & Font Awesome -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,7 +22,7 @@
     <div class="header-inner">
       <div class="brand-area">
         <a class="logo" href="#home">Harish</a>
-        <span class="subtitle">Web Developer</span>
+        <span class="subtitle bolder">Web Developer</span>
       </div>
 
       <div class="lang-icons" aria-hidden="true">
@@ -30,17 +34,25 @@
         <div class="lang-icon" title="SQL"><i class="fas fa-database"></i><span class="lang-label">SQL</span></div>
       </div>
 
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
       <nav class="main-nav" aria-label="Main navigation">
         <a class="nav-link" href="#home">Home</a>
         <a class="nav-link" href="#about">About</a>
         <a class="nav-link" href="#skills">Skills</a>
         <a class="nav-link" href="#projects">Projects</a>
 
-        <!-- Resume (plain text hover like other links) -->
-        <a class="nav-link resume-link" href="HARISH R - RESUME.pdf" target="_blank" rel="noopener">Resume</a>
+        <a class="nav-link resume-link" href="https://github.com/hxrish-14/harish_portfolio.git" target="_blank" rel="noopener">Resume</a>
 
-        <!-- Contact (green hover) -->
         <a class="nav-link contact-cta" href="#contact">Contact</a>
+
+        <div class="theme-toggle-wrap" id="themeToggleWrap" title="Toggle light / dark">
+          <button id="themeToggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle theme">
+            <span class="toggle-track" data-mode="dark">
+              <span class="toggle-thumb" id="toggleThumb"><i class="fa-solid fa-moon" id="toggleIcon"></i></span>
+            </span>
+          </button>
+        </div>
       </nav>
     </div>
   </header>
@@ -59,12 +71,16 @@
           </div>
 
           <div class="social-tiles">
-            <a class="social-tile" href="https://github.com/hxrish-14" target="_blank" rel="noopener"><i class="fab fa-github"></i><span>GitHub</span></a>
-            <a class="social-tile" href="https://www.linkedin.com/in/harish-r-ab6599349?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+            <a class="social-tile" href="https://github.com/hxrish-14" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fab fa-github"></i><span class="st-text">GitHub</span>
+            </a>
+            <a class="social-tile linkedin" href="https://www.linkedin.com/in/harish-r-ab6599349?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i><span class="st-text">LinkedIn</span>
+            </a>
           </div>
         </div>
 
-        <aside class="hero-right" aria-hidden="false">
+        <aside class="hero-right">
           <div class="profile-card">
             <div class="avatar-wrap">
               <img class="avatar" src="https://avatars.githubusercontent.com/u/141498620?s=400&u=4f4fd1b20985da8b4041281916ad6041c3634eb1&v=4" alt="Harish avatar">
@@ -135,7 +151,7 @@
         <div class="projects-grid four-up full-fill center-grid">
           <!-- Advanced Calculator -->
           <article class="project">
-            <img src="https://images.unsplash.com/photo-1526378724826-5fca8e6b8f19?q=80&w=1200&auto=format&fit=crop" alt="Advanced Calculator">
+            <img src="CALC.png" alt="Advanced Calculator cover">
             <div class="project-body">
               <h3>Advanced Calculator</h3>
               <p>Feature-rich calculator with expression parsing, history and keyboard support.</p>
@@ -149,7 +165,7 @@
 
           <!-- Todo App -->
           <article class="project">
-            <img src="https://images.unsplash.com/photo-1559757175-570b6a1b3dbb?q=80&w=1200&auto=format&fit=crop" alt="Todo App">
+            <img src="TODO.png" alt="Todo App cover">
             <div class="project-body">
               <h3>Todo App</h3>
               <p>CRUD todo app with filters, localStorage and smooth interactions.</p>
@@ -163,24 +179,24 @@
 
           <!-- Weather App -->
           <article class="project">
-            <img src="https://images.unsplash.com/photo-1501973801540-537f08ccae7b?q=80&w=1200&auto=format&fit=crop" alt="Weather App">
+            <img src="WEATHER.png" alt="Weather App cover">
             <div class="project-body">
               <h3>Weather App</h3>
-              <p>Responsive weather app using OpenWeather API — search & geolocation.</p>
+              <p>Live weather forecasts with search and geolocation features.</p>
               <div class="meta">HTML • CSS • JavaScript • APIs</div>
               <div class="project-actions">
-                <a class="btn small live-btn" href="LIVE_LINK_3" target="_blank" rel="noopener">Live</a>
-                <a class="btn small code-btn" href="CODE_LINK_3" target="_blank" rel="noopener">Code</a>
+                <a class="btn small live-btn" href="http://www.wheather_forecast.com/" target="_blank" rel="noopener">Live</a>
+                <a class="btn small code-btn" href="https://github.com/hxrish-14/Weather_app.git" target="_blank" rel="noopener">Code</a>
               </div>
             </div>
           </article>
 
-          <!-- This Portfolio -->
+          <!-- Portfolio -->
           <article class="project">
-            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="Portfolio">
+            <img src="PORTFOLIO.png" alt="Portfolio cover">
             <div class="project-body">
               <h3>Harish's Portfolio</h3>
-              <p>This portfolio — live demo (homepage).</p>
+              <p>Portfolio project to lively display the projects and skills.</p>
               <div class="meta">HTML • CSS • JavaScript</div>
               <div class="project-actions">
                 <a class="btn small live-btn" href="#home">Live</a>
@@ -203,7 +219,6 @@
           <h3 id="contact-heading">Contacting me for web project works.</h3>
           <p class="muted">Send a quick brief and I'll respond.</p>
 
-          <!-- Mail me anchor button -->
           <a class="mail-button" href="mailto:harishramesh004@gmail.com">✉️ Mail me!</a>
         </div>
 
@@ -236,4 +251,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
