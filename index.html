@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Harish — Web Developer (Fresher)</title>
+  <meta name="description" content="Harish portfolio — HTML, CSS, JavaScript, Python, Java, SQL.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-gradient" aria-hidden="true"></div>
+  <div class="bg-blobs" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div></div>
+
+  <header class="site-header" id="siteHeader" aria-label="Top navigation">
+    <div class="header-inner">
+      <div class="brand-area">
+        <a class="logo" href="#home">Harish</a>
+        <span class="subtitle">Web Developer</span>
+      </div>
+
+      <div class="lang-icons" aria-hidden="true">
+        <div class="lang-icon" title="HTML"><i class="fab fa-html5"></i><span class="lang-label">HTML</span></div>
+        <div class="lang-icon" title="CSS"><i class="fab fa-css3-alt"></i><span class="lang-label">CSS</span></div>
+        <div class="lang-icon" title="JavaScript"><i class="fab fa-js"></i><span class="lang-label">JavaScript</span></div>
+        <div class="lang-icon" title="Python"><i class="fab fa-python"></i><span class="lang-label">Python</span></div>
+        <div class="lang-icon" title="Java"><i class="fab fa-java"></i><span class="lang-label">Java</span></div>
+        <div class="lang-icon" title="SQL"><i class="fas fa-database"></i><span class="lang-label">SQL</span></div>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+
+        <!-- Resume (plain text hover like other links) -->
+        <a class="nav-link resume-link" href="https://github.com/hxrish-14/harish_portfolio.git" target="_blank" rel="noopener">Resume</a>
+
+        <!-- Contact (green hover) -->
+        <a class="nav-link contact-cta" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main" id="home">
+    <!-- HERO -->
+    <section id="home" class="section hero-section" aria-labelledby="home-heading">
+      <div class="section-inner hero-inner">
+        <div class="hero-left">
+          <h1 id="home-heading" class="title">Hi, I'm <span class="accent">Harish</span></h1>
+          <p class="lead">A fresher Web Developer crafting vibrant, accessible, and smooth user interfaces with <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. Comfortable with <strong>Python</strong>, <strong>Java</strong>, and <strong>SQL</strong>.</p>
+
+          <div class="hero-actions">
+            <a class="btn action-btn see-projects" href="#projects">See Projects</a>
+            <a class="btn action-btn hire-me" href="https://www.linkedin.com/in/harish-r-ab6599349?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener">Hire Me</a>
+          </div>
+
+          <div class="social-tiles">
+            <a class="social-tile" href="https://github.com/hxrish-14" target="_blank" rel="noopener"><i class="fab fa-github"></i><span>GitHub</span></a>
+            <a class="social-tile" href="https://www.linkedin.com/in/harish-r-ab6599349?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+          </div>
+        </div>
+
+        <aside class="hero-right" aria-hidden="false">
+          <div class="profile-card">
+            <div class="avatar-wrap">
+              <img class="avatar" src="https://avatars.githubusercontent.com/u/141498620?s=400&u=4f4fd1b20985da8b4041281916ad6041c3634eb1&v=4" alt="Harish avatar">
+            </div>
+            <div class="opp-tile">Open to opportunities</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about-section">
+      <div class="section-inner about-inner">
+        <div class="about-left">
+          <h2 class="section-title interactive">About</h2>
+          <p class="muted">I love turning ideas into clean interfaces. As a fresher, I focus on solid fundamentals and readable code.</p>
+          <div class="about-text padded">
+            <p>My journey began with learning HTML and CSS — building small pages, then adding interactivity with JavaScript. I enjoy solving layout challenges, optimizing accessibility, and structuring code for growth.</p>
+          </div>
+        </div>
+
+        <aside class="about-stats stats-grid">
+          <div class="stat hover-stat"><div class="num">3+</div><div class="label">Projects</div></div>
+          <div class="stat hover-stat"><div class="num">80%</div><div class="label">Frontend Focus</div></div>
+          <div class="stat hover-stat"><div class="num">VS Code</div><div class="label">Primary Editor</div></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills-section">
+      <div class="section-inner center-fill">
+        <h2 class="section-title interactive">Skills & Tools</h2>
+
+        <div class="skills-grid full-fill">
+          <div class="skill-card hover-card">
+            <h3 class="skill-title">Languages</h3>
+            <ul class="skill-list">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>Java</li><li>SQL</li>
+            </ul>
+          </div>
+
+          <div class="skill-card hover-card">
+            <h3 class="skill-title">Tools</h3>
+            <ul class="skill-list">
+              <li>VS Code</li><li>Git & GitHub</li>
+            </ul>
+          </div>
+
+          <div class="skill-card hover-card progress-card">
+            <h3 class="skill-title">Proficiency</h3>
+            <div class="progress">
+              <label>HTML</label><div class="bar"><div class="fill" style="--w:95%"></div></div>
+              <label>CSS</label><div class="bar"><div class="fill" style="--w:88%"></div></div>
+              <label>JavaScript</label><div class="bar"><div class="fill" style="--w:78%"></div></div>
+              <label>Python</label><div class="bar"><div class="fill" style="--w:70%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects-section">
+      <div class="section-inner center-fill">
+        <h2 class="section-title interactive">Projects</h2>
+
+        <div class="projects-grid four-up full-fill center-grid">
+          <!-- Advanced Calculator -->
+          <article class="project">
+            <img src="https://images.unsplash.com/photo-1526378724826-5fca8e6b8f19?q=80&w=1200&auto=format&fit=crop" alt="Advanced Calculator">
+            <div class="project-body">
+              <h3>Advanced Calculator</h3>
+              <p>Feature-rich calculator with expression parsing, history and keyboard support.</p>
+              <div class="meta">HTML • CSS • JavaScript</div>
+              <div class="project-actions">
+                <a class="btn small live-btn" href="https://hxrish-14.github.io/advanced_calc/" target="_blank" rel="noopener">Live</a>
+                <a class="btn small code-btn" href="https://github.com/hxrish-14/advanced_calc.git" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Todo App -->
+          <article class="project">
+            <img src="https://images.unsplash.com/photo-1559757175-570b6a1b3dbb?q=80&w=1200&auto=format&fit=crop" alt="Todo App">
+            <div class="project-body">
+              <h3>Todo App</h3>
+              <p>CRUD todo app with filters, localStorage and smooth interactions.</p>
+              <div class="meta">HTML • CSS • JavaScript</div>
+              <div class="project-actions">
+                <a class="btn small live-btn" href="LIVE_LINK_2" target="_blank" rel="noopener">Live</a>
+                <a class="btn small code-btn" href="CODE_LINK_2" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Weather App -->
+          <article class="project">
+            <img src="https://images.unsplash.com/photo-1501973801540-537f08ccae7b?q=80&w=1200&auto=format&fit=crop" alt="Weather App">
+            <div class="project-body">
+              <h3>Weather App</h3>
+              <p>Responsive weather app using OpenWeather API — search & geolocation.</p>
+              <div class="meta">HTML • CSS • JavaScript • APIs</div>
+              <div class="project-actions">
+                <a class="btn small live-btn" href="LIVE_LINK_3" target="_blank" rel="noopener">Live</a>
+                <a class="btn small code-btn" href="CODE_LINK_3" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- This Portfolio -->
+          <article class="project">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="Portfolio">
+            <div class="project-body">
+              <h3>Harish's Portfolio</h3>
+              <p>This portfolio — live demo (homepage).</p>
+              <div class="meta">HTML • CSS • JavaScript</div>
+              <div class="project-actions">
+                <a class="btn small live-btn" href="#home">Live</a>
+                <a class="btn small code-btn" href="https://github.com/hxrish-14/harish_portfolio.git" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section hidden" aria-labelledby="contact-heading">
+      <div class="section-inner contact-inner">
+        <div class="contact-left">
+          <div class="contact-icon-wrap">
+            <i class="fa-regular fa-envelope contact-main-icon" aria-hidden="true"></i>
+          </div>
+
+          <h3 id="contact-heading">Contacting me for web project works.</h3>
+          <p class="muted">Send a quick brief and I'll respond.</p>
+
+          <!-- Mail me anchor button -->
+          <a class="mail-button" href="mailto:harishramesh004@gmail.com">✉️ Mail me!</a>
+        </div>
+
+        <div class="contact-form-wrap">
+          <form id="contactForm" class="contact-form hidden-form" novalidate>
+            <label for="cname">Name</label>
+            <input id="cname" name="name" type="text" required>
+
+            <label for="cemail">Email</label>
+            <input id="cemail" name="email" type="email" required>
+
+            <label for="cmessage">Message</label>
+            <textarea id="cmessage" name="message" rows="5" required></textarea>
+
+            <div class="form-actions">
+              <button type="submit" class="btn submit-btn">Send</button>
+            </div>
+
+            <div id="formResponse" class="form-response" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-inner">© All rights reserved • Portfolio by Harish ♡</div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
